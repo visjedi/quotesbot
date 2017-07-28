@@ -7,8 +7,13 @@
 
 import scrapy
 
-
 class QuotesbotItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    pass
+
+    # defining these inline with the quotesbot example
+    text 		= scrapy.Field()
+    author 		= scrapy.Field()
+    tags 		= scrapy.Field()
+    rank		= scrapy.Field()
+    date_added 	= scrapy.Field() # this is my own addition to test the feed exports
